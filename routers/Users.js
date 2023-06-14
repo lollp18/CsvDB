@@ -1,4 +1,5 @@
 const express = require("express")
+
 const router = express.Router()
 const emailValidator = require("deep-email-validator")
 const Users = new Map([
@@ -9,56 +10,7 @@ const Users = new Map([
       Email: "Hans123@gmail.com",
       Password: 12,
 
-      Tabellen: [
-        {
-          TabelName: "no Tabel",
-          data: [
-            [
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-            ],
-            [
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-            ],
-
-            [
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-              { activ: false, zellenInhalt: "" },
-            ],
-          ],
-          lastZelle: {
-            zeile: undefined,
-            spalten: undefined,
-            zellenInhalt: "",
-            activ: false,
-          },
-          currentZelle: {
-            zeile: undefined,
-            spalten: undefined,
-            zellenInhalt: "",
-            activ: false,
-          },
-        },
-      ],
+      Tabellen: [],
     },
   ],
 ])
