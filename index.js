@@ -10,7 +10,7 @@ const UserRouter = require("./routers/Users")
 const app = express()
 
 const server = http.createServer(app)
-
+app.use(cors())
 app.use(bodyParser.json({ limit: "50mb" }))
 app.use(express.json())
 app.use("/users", UserRouter)
